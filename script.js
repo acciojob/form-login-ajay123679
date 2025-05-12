@@ -4,7 +4,7 @@ function getFormvalue(e) {
 	const form=document.getElementById("form1");
 	const formdata=new FormData(form);
 	let arr=[];
-	for(let [key,value] of formdata)
+	for(let [key,value] of formdata.entries())
 	{
 		arr.push(value);
 	}
